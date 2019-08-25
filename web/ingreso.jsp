@@ -7,7 +7,10 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 --%>
-<<html>
+<%@page import="Ena.modelo.Gerencia"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="java.util.ArrayList"%>
+<html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Ingreso nuevo requerimiento</title>
@@ -26,7 +29,7 @@
               <div class="cabecera">
                     Ingresar Requerimiento
                 </div>
-            <form action="ComboGerencia" method="post" id="form1">
+            <form action="inicioservlet" method="post" id="form1">
                 <div class="input_text">
                     Gerencia: 
                     <%
@@ -49,9 +52,19 @@
                     Asignar a:<br>
                     Encargado:<br>
                     Requerimiento:<br>
-                    [Guardar] [Volver al Menu]
-                </div>
+                    
+                    </div>     
+                </div>  
             </form>
+                  <form method="post" action "combogerencia">
+                        <div class="input_text">
+                            <input type="submit" value="Guardar" name ="btn_guardar">
+                            </form>
+                  
+                  <form method="get" action ="menu.jsp">
+                      <input type="submit" value="Volver a menu" name ="btn_menu">
+                  </form>
+                      </div>
          </div>
     </body>
 </html>

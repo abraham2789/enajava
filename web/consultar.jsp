@@ -12,6 +12,15 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Su solicitud esta en ejecucion</h1>
     </body>
+     <form method="post" action "combogerencia">
+                        <div class="input_text">
+                            <input type="submit" value="Guardar" name ="btn_guardar">
+                            </form>
+                  
+                  <form method="get" action ="menu.jsp">
+                      <input type="submit" value="Volver a menu" name ="btn_menu">
+                  </form>
+                      </div>
 </html>
